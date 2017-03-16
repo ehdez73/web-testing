@@ -1,0 +1,132 @@
+➜  serenity-bdd git:(serenity-bdd) ✗ ./gradlew clean test aggregate --stacktrace
+Updating project.build.directory to /Users/ehdez/workspace/sandbox/web-testing/serenity-bdd
+:clearReports
+Updating project.build.directory to /Users/ehdez/workspace/sandbox/web-testing/serenity-bdd
+Updating project.serenity.outputDirectory to /Users/ehdez/workspace/sandbox/web-testing/serenity-bdd/build/site
+:clean
+:compileJava NO-SOURCE
+:processResources NO-SOURCE
+:classes UP-TO-DATE
+:compileTestJava
+:processTestResources
+:testClasses
+:test FAILED
+:aggregate
+Updating project.build.directory to /Users/ehdez/workspace/sandbox/web-testing/serenity-bdd
+Updating project.serenity.outputDirectory to /Users/ehdez/workspace/sandbox/web-testing/serenity-bdd/build/site
+Generating Serenity Reports for serenity-bdd-test to directory /Users/ehdez/workspace/sandbox/web-testing/serenity-bdd/build/site
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> A build operation failed.
+      Could not write XML test results for | España - Islas Canarias | 38204 | España - Islas Canarias | 38204 | 10 | 20 | 30 | 1 | door-to-door | John | Doe | +34622000000 | john.doe@example.com | C/Foo, 1 | to file /Users/ehdez/workspace/sandbox/web-testing/serenity-bdd/build/test-results/test/TEST-#7c#20Espa#f1a#20-#20Islas#20Canarias#20#7c#2038204#20#7c#20Espa#f1a#20-#20Islas#20Canarias#20#7c#2038204#20#7c#2010#20#7c#2020#20#7c#2030#20#7c#201#20#7c#20door-to-door#20#7c#20John#20#7c#20Doe#20#7c#20#2b34622000000#20#7c#20john.doe#40example.com#20#7c#20C#2fFoo#2c#201#20#7c.xml.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':test'.
+        at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:84)
+        at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:55)
+        at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+        at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+        at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+        at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:46)
+        at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:51)
+        at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+        at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+        at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+        at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:236)
+        at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:228)
+        at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+        at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+        at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:61)
+        at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:228)
+        at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:215)
+        at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:77)
+        at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:58)
+        at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:32)
+        at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:113)
+        at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+        at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+        at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+        at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+        at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+        at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+        at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+        at org.gradle.initialization.DefaultGradleLauncher$RunTasksAction.execute(DefaultGradleLauncher.java:256)
+        at org.gradle.initialization.DefaultGradleLauncher$RunTasksAction.execute(DefaultGradleLauncher.java:253)
+        at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+        at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+        at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:56)
+        at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:175)
+        at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:119)
+        at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:102)
+        at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:71)
+        at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+        at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+        at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+        at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+        at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:75)
+        at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:49)
+        at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:49)
+        at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:31)
+        at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:67)
+        at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+        at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+        at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:47)
+        at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+        at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+        at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+        at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+        at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+        at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+        at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+        at org.gradle.util.Swapper.swap(Swapper.java:38)
+        at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+        at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+        at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:55)
+        at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+        at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:60)
+        at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+        at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+        at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:72)
+        at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+        at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+        at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+        at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:297)
+        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+        at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+Caused by: org.gradle.internal.operations.MultipleBuildOperationFailures: A build operation failed.
+    Could not write XML test results for | España - Islas Canarias | 38204 | España - Islas Canarias | 38204 | 10 | 20 | 30 | 1 | door-to-door | John | Doe | +34622000000 | john.doe@example.com | C/Foo, 1 | to file /Users/ehdez/workspace/sandbox/web-testing/serenity-bdd/build/test-results/test/TEST-#7c#20Espa#f1a#20-#20Islas#20Canarias#20#7c#2038204#20#7c#20Espa#f1a#20-#20Islas#20Canarias#20#7c#2038204#20#7c#2010#20#7c#2020#20#7c#2030#20#7c#201#20#7c#20door-to-door#20#7c#20John#20#7c#20Doe#20#7c#20#2b34622000000#20#7c#20john.doe#40example.com#20#7c#20C#2fFoo#2c#201#20#7c.xml.
+        at org.gradle.internal.operations.DefaultBuildOperationQueue.waitForCompletion(DefaultBuildOperationQueue.java:100)
+        at org.gradle.internal.operations.DefaultBuildOperationProcessor.run(DefaultBuildOperationProcessor.java:60)
+        at org.gradle.internal.operations.DefaultBuildOperationProcessor.run(DefaultBuildOperationProcessor.java:85)
+        at org.gradle.api.internal.tasks.testing.junit.result.Binary2JUnitXmlReportGenerator.generate(Binary2JUnitXmlReportGenerator.java:52)
+        at org.gradle.api.tasks.testing.Test.executeTests(Test.java:648)
+        at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+        at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.doExecute(DefaultTaskClassInfoStore.java:141)
+        at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+        at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:123)
+        at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:632)
+        at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:615)
+        at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:95)
+        at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:76)
+        ... 70 more
+Caused by: org.gradle.api.GradleException: Could not write XML test results for | España - Islas Canarias | 38204 | España - Islas Canarias | 38204 | 10 | 20 | 30 | 1 | door-to-door | John | Doe | +34622000000 | john.doe@example.com | C/Foo, 1 | to file /Users/ehdez/workspace/sandbox/web-testing/serenity-bdd/build/test-results/test/TEST-#7c#20Espa#f1a#20-#20Islas#20Canarias#20#7c#2038204#20#7c#20Espa#f1a#20-#20Islas#20Canarias#20#7c#2038204#20#7c#2010#20#7c#2020#20#7c#2030#20#7c#201#20#7c#20door-to-door#20#7c#20John#20#7c#20Doe#20#7c#20#2b34622000000#20#7c#20john.doe#40example.com#20#7c#20C#2fFoo#2c#201#20#7c.xml.
+        at org.gradle.api.internal.tasks.testing.junit.result.Binary2JUnitXmlReportGenerator$JUnitXmlReportFileGenerator.run(Binary2JUnitXmlReportGenerator.java:95)
+        at org.gradle.internal.operations.DefaultBuildOperationProcessor$1.execute(DefaultBuildOperationProcessor.java:82)
+        at org.gradle.internal.operations.DefaultBuildOperationProcessor$1.execute(DefaultBuildOperationProcessor.java:74)
+        at org.gradle.internal.operations.DefaultBuildOperationQueue$OperationHolder.runBuildOperation(DefaultBuildOperationQueue.java:169)
+        at org.gradle.internal.operations.DefaultBuildOperationQueue$OperationHolder.run(DefaultBuildOperationQueue.java:162)
+        ... 2 more
+Caused by: java.io.FileNotFoundException: /Users/ehdez/workspace/sandbox/web-testing/serenity-bdd/build/test-results/test/TEST-#7c#20Espa#f1a#20-#20Islas#20Canarias#20#7c#2038204#20#7c#20Espa#f1a#20-#20Islas#20Canarias#20#7c#2038204#20#7c#2010#20#7c#2020#20#7c#2030#20#7c#201#20#7c#20door-to-door#20#7c#20John#20#7c#20Doe#20#7c#20#2b34622000000#20#7c#20john.doe#40example.com#20#7c#20C#2fFoo#2c#201#20#7c.xml (File name too long)
+        at org.gradle.api.internal.tasks.testing.junit.result.Binary2JUnitXmlReportGenerator$JUnitXmlReportFileGenerator.run(Binary2JUnitXmlReportGenerator.java:91)
+        ... 6 more
+
+
+BUILD FAILED
+
+Total time: 6.933 secs
